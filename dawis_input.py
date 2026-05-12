@@ -6,8 +6,8 @@ import cProfile
 from datetime import datetime
 
 infile = 'cutout_VIS_bin4_ext.fits'
-indir = '/n08data/ellien/Fornax_Euclid/data/'
-outdir = '/n08data/ellien/Fornax_Euclid/wavelets/out1/'
+indir = '/n08data/ellien/Euclid_Fornax/data/'
+outdir = '/n08data/ellien/Euclid_Fornax/wavelets/out1/'
 
 if os.path.isdir( outdir ) == False:
     os.makedirs( outdir, exist_ok = True )
