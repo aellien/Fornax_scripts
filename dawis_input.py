@@ -5,7 +5,8 @@ import shutil
 import cProfile
 from datetime import datetime
 
-infile = '/n08data/ellien/Fornax_Euclid/data/cutout_VIS_bin4_ext.fits'
+infile = 'cutout_VIS_bin4_ext.fits'
+indir = '/n08data/ellien/Fornax_Euclid/data/'
 outdir = '/n08data/ellien/Fornax_Euclid/wavelets/out1/'
 
 if os.path.isdir( outdir ) == False:
