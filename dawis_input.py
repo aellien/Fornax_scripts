@@ -47,7 +47,7 @@ outfile_format = 'hdf5'
 resume = True 
 deconv = True
 
-shutil.copyfile( os.path.abspath(__file__), os.path.join( outdir, infile[:-4] + 'input.dawis.py' ) )
+shutil.copyfile( os.path.abspath(__file__), os.path.join( outdir, 'input.dawis.py' ) )
 
 dawis.synthesis_by_analysis( indir = indir, infile = infile, outdir = outdir, n_cpus = n_cpus, starting_level = starting_level, tau = tau, n_levels = n_levels, n_sigmas = n_sigmas, outfile_format = outfile_format,\
                                 gamma = gamma, min_span = min_span, max_span = max_span, lvl_sep_big = lvl_sep_big, rm_gamma_for_big = rm_gamma_for_big, lvl_deblend = lvl_deblend, deblend_contrast = deblend_contrast, \
