@@ -7,13 +7,13 @@ from datetime import datetime
 
 infile = 'cutout_VIS_bin4_ext.fits'
 indir = '/n08data/ellien/Euclid_Fornax/data/'
-outdir = '/n08data/ellien/Euclid_Fornax/wavelets/out1/'
+outdir = '/n08data/ellien/Euclid_Fornax/wavelets/out2/'
 
 if os.path.isdir( outdir ) == False:
     os.makedirs( outdir, exist_ok = True )
     
-tau = 0.05   # Relative Threshold
-gamma = 0.5   # Attenuation (CLEAN) factor
+tau = 0.1   # Relative Threshold
+gamma = 0.25   # Attenuation (CLEAN) factor
 
 ceps = 1E-4    # Convergence value for epsilon
 scale_lvl_eps = 1 # Scale convergence value with wavelet scale
@@ -26,7 +26,7 @@ max_span = 2    # Maximum number of wavelet scales spanned by an interscale tree
 deblend_contrast = 0.01
 lvl_deblend = 2 # Scale at which the regions of significant wavelet coefficients are deblended
 lvl_sep_big = 5     # Scale at wich mix_span, max_span & gamma are set to 1
-lvl_sep_op = 3  # Scale at which synthesis operator switch from SUM to ADJOINT
+lvl_sep_op = 5  # Scale at which synthesis operator switch from SUM to ADJOINT
 rm_gamma_for_big = True # If set to true, the attenuation factor is not applied for scales higher than lvl_sep_big
 
 extent_sep = 0.15   # Ratio n_pix/vignet under which the Haar wavelet is used for restoration
