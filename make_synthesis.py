@@ -176,7 +176,7 @@ if __name__ == '__main__':
     xc, yc = xs / 2., ys / 2.
 
     # synthesis
-    synthesis_small_sources( im = oim,
+    synthesis_large_sources( im = oim,
                                  header = head, 
                                  nfwp = nfwp, 
                                  lvl_sep = lvl_sep, 
