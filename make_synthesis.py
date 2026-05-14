@@ -122,7 +122,7 @@ if __name__ == '__main__':
     path_wavelets = '/n08data/ellien/Euclid_Fornax/wavelets/out1/'
         
     # Input files
-    cutl = 'cutout_VIS_bin4_ext.fits'
+    cut = 'cutout_VIS_bin4_ext.fits'
 
     # Cosmology
     H0 = 70.0 # Hubble constant
