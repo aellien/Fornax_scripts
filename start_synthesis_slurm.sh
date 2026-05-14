@@ -10,6 +10,6 @@
 
 source /home/ellien/.bashrc
 conda activate dawis
-python -W"ignore" /home/ellien/Euclid_Fornax/Fornax_scripts/make_synthesis_euc_edfn.py
+python -W"ignore" /home/ellien/Euclid_Fornax/Fornax_scripts/make_synthesis.py
 
 exit 0
