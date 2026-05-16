@@ -119,7 +119,7 @@ if __name__ == '__main__':
 
     # Paths, lists & variables
     path_data = '/n08data/ellien/Euclid_Fornax/data'
-    path_wavelets = '/n08data/ellien/Euclid_Fornax/wavelets/out1/'
+    path_wavelets = '/n08data/ellien/Euclid_Fornax/wavelets/out2/'
         
     # Input files
     cut = 'cutout_VIS_bin4_ext.fits'
@@ -133,7 +133,7 @@ if __name__ == '__main__':
     pix_scale = 0.4 # pixel scale [arcsec/pix]
                 
     # wavelet scales related
-    lvl_sep = 7 # wavelet scale separation
+    lvl_sep = 6 # wavelet scale separation
     lvl_sep_max = 9
     n_levels = 9
     
